@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classic Tee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="cartDiv">
+        <button id="cart"></button>
+        <div class="dropdown-content" id="cart-div">
+        </div>
+      </div>
+    </header>
+    <div class="columns container">
+        <div class="column column1">
+            <img src="images/classic-tee.jpg" alt="" style="height: 600px">
+        </div>
+        <div class="column column2">
+            <h1>Classic Tee</h1>
+            <h2>$75.00</h2>
+            <p class="paragraph">Dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba
+                vestra sunt. Quod autem ratione actum est, id officium appellamus dolor sit amet,
+                consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod
+                autem ratione actum est, id officium appellamus.
+            </p>
+            <p class="size">
+                <span>SIZE</span><span style="color: #C90000">*</span><span id="sizetext"></span>
+            </p>
+            <table>
+                <tr>
+                    <td><p id='S' class="sml" onclick="sizeClick('S')">S</p></td>
+                    <td><p id='M' class="sml" onclick="sizeClick('M')">M</p></td>
+                    <td><p id='L' class="sml" onclick="sizeClick('L')">L</p></td>
+                </tr>
+            </table>
+            <p class="cart-button" onclick="addToCart()">ADD TO CART</p>
+        </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+
+</html>
